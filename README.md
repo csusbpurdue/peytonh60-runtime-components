@@ -1,24 +1,27 @@
 # Runtime Components
 
-## Sample Section
+This program contains files for running Git in terminal
 
-## This'll be a _Helpful_ Section About the Greek Letter Θ!
-A heading containing characters not allowed in fragments, UTF-8 characters, two consecutive spaces between the first and second words, and formatting.
+## .bashrc
+- bash reads this file each time an interactive terminal is opened
+- the file formats terminal output and adds command shortcuts
 
-## This heading is not unique in the file
+## .zshrc
+- read by zsh, the default shell on macOS
+- adds themes and command shortcuts
 
-TEXT 1
+## .vimrc
+- read by vim each time the editor is opened
+- formats code editor and adds commands
 
-## This heading is not unique in the file
+## .gdbinit
+- read by gdb to format terminal output and adjust window settings
+  
+## .gitconfig
+- git reads this file each time it runs
+- formats output and adds command aliases
 
-TEXT 2
-
-# Links to the example headings above
-
-Link to the sample section: [Link Text](#sample-section).
-
-Link to the helpful section: [Link Text](#thisll-be-a-helpful-section-about-the-greek-letter-Θ).
-
-Link to the first non-unique section: [Link Text](#this-heading-is-not-unique-in-the-file).
-
-Link to the second non-unique section: [Link Text](#this-heading-is-not-unique-in-the-file-1).
+## install.sh
+- copies files to home directory
+- sends files to git for configuration
+- installs oh-my-zsh, if zsh is available
